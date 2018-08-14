@@ -1,0 +1,9 @@
+.sidebar-content {
+    margin-bottom: 2.142rem;
+    &__title {
+        display: block;
+        margin: 0 0 1rem 0;
+        padding-bottom: 0.714rem;
+        border-bottom: 3px solid $black;
+    }
+}

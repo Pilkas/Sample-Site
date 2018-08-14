@@ -1,0 +1,72 @@
+$gap: 1.571rem;
+
+.columns {
+    display: flex;
+    flex-flow: row;
+    @media screen and (max-width: 768px) {
+        flex-flow: column;
+    }
+}
+
+.column {
+    @media screen and (min-width: 769px) {
+        margin-right: $gap;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: $gap;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    // &.is-half {
+    //     flex: 1 1 50%;
+    // }
+    // is-two-thirds
+    // is-half
+    // is-one-third 
+    &.is-flex-1 {
+        flex: 1;
+        display: block;
+        @media screen and (max-width: 768px) {
+            flex: 1 1 auto;
+        }
+    }
+    &.is-flex-4 {
+        flex: 4;
+        display: block;
+        @media screen and (max-width: 768px) {
+            flex: 9 1 auto;
+        }
+    }
+    &.is-flex-9 {
+        flex: 9;
+        display: block;
+        @media screen and (max-width: 768px) {
+            flex: 9 1 auto;
+        }
+    }
+    // @for $i from 1 through 12 {
+    //     &.is-flex-#{$i} {
+    //     // flex: 0 0 calc((#{$i}/12) * 100 - ((#{$i} - 1) * #{$gap}));
+    //     // width: percentage($i / 12);
+    //     // width: calc(#{$i}/12 * 100%);
+    //     // width: calc((#{$i} / 12 * 100%) - 2*#{$gap});
+    //     // width: calc((#{$i} / 12 * 100%) - 10px);
+    //     // flex: 0 0 calc(20% - 20px);
+    //     // $column-width: percentage($i / 12);
+    //     // flex: 0 0 $column-width;
+    //     // flex-basis: calc((#{$i} / 12 * 100%) - #{$gap} * 2);
+    //     // width: calc(#{$i} / 12 * 100%);
+    //     // flex: #{$i} 0 0;
+    //     flex: $i;
+    //     display: block;
+    //     // flex-grow: $i;
+    //     // flex-shrink: 0;
+    //     // flex-basis: 0px;
+    //     @media screen and (max-width: 768px) {
+    //         flex: $i 1 auto;
+    //     }
+    //     }
+    // }
+}

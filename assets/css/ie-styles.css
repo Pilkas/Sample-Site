@@ -1,0 +1,47 @@
+.primary-menu {
+  text-align: right; }
+  .primary-menu .main-menu {
+    display: inline-block; }
+    .primary-menu .main-menu__item {
+      float: left; }
+
+.secondary-menu {
+  text-align: right; }
+  .secondary-menu.secondary-menu > ul {
+    display: inline-block; }
+    .secondary-menu.secondary-menu > ul > li {
+      float: left; }
+
+.column {
+  float: left; }
+
+.columns:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.is-flex-1 {
+  width: calc( (100% - 1.571rem) / 2); }
+
+.is-flex-4 {
+  width: calc(30% - 1.571rem); }
+
+.is-flex-9 {
+  width: 70%; }
+
+.footer {
+  overflow: auto;
+  position: relative; }
+  .footer__navigation {
+    padding-bottom: 1.714rem;
+    flex: 0 1 100%; }
+  .footer__navigation > ul > li > a {
+    float: left; }
+  .footer__content {
+    float: left;
+    width: calc(100% - 120px - 2rem); }
+  .footer__logo {
+    height: 37px;
+    position: absolute;
+    bottom: 1.428rem;
+    right: 0; }

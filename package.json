@@ -1,0 +1,26 @@
+{
+  "name": "sample-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": [
+    "last 2 versions",
+    "ie > 8"
+  ],
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-build-ie && npm run css-postcss",
+    "css-build": "node-sass assets/sass/main.scss assets/css/main.css",
+    "css-build-ie": "node-sass assets/sass/ie.scss assets/css/ie-styles.css",
+    "css-postcss": "postcss --use autoprefixer postcss-flexbugs-fixes --output assets/css/main.css assets/css/main.css",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0"
+  },
+  "dependencies": {}
+}

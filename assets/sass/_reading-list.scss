@@ -1,0 +1,17 @@
+.read-more {
+    &__title {
+        margin: 0 0 1.428rem;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__list-item {
+        border-bottom: 1px solid $grey;
+        line-height: 2.142;
+        &:last-child{
+            border: none;
+        }
+    }
+}

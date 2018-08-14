@@ -1,0 +1,68 @@
+.contact-form {
+    border: 1px solid #898989;
+    padding: 1.357rem;
+    &__input-details {
+        margin-bottom: 1.428rem;
+        color: $black;
+        font-weight: bold;
+    }
+    &__input-notification {
+        font-weight: normal;
+        font-size: 0.857rem;
+    }
+    & input[type="text"], textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #898989;
+        box-shadow: none;
+        margin-top: 0.571rem;
+        &.is-invalid {
+            background-color: pink;
+        }
+
+        &:focus {
+            outline:none;
+        }
+
+        // &:required:invalid, &:focus:invalid {
+        //     background-image: url(/assets/css/bars-solid.svg);
+        //     background-color: chartreuse;
+        //     background-position: right top;
+        //     background-repeat: no-repeat;
+        //   }
+        //   &:required:valid {
+        //     background-image: url(/images/valid.png);
+        //     background-position: right top;
+        //     background-repeat: no-repeat;
+        //   }
+
+    }
+    & input[type="text"] {
+        padding: 0.535rem;
+    }
+    & textarea {
+        height: 9.214rem;
+        resize: vertical;
+    }
+    &__submit-button {
+        text-transform: uppercase;
+        padding: 0.928rem 1.857rem;
+        box-shadow: none;
+        border: none;
+        background-color: $pink;
+        color: $white;
+        letter-spacing: 0.142rem;
+        cursor: pointer;
+        
+        &:hover {
+            background: #ea1664;
+        }
+        &:focus {
+            outline: none;
+            background-color: $pink;
+        }
+        &:active {
+            background-color: #ea1664;
+        }
+    }
+}

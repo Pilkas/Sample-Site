@@ -1,0 +1,33 @@
+html {
+    font-size: 14px;
+}
+body {
+    background-color: $light-grey;
+    line-height: 1.4;
+    font-family: $font-sans-serif;
+    color: $dark-grey;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    outline: 0;
+  &:hover {
+    color: lighten($blue, 20%)
+  }
+}
+
+.pink-bg {
+    background-color: $pink;
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.grey-bg {
+    background-color: $grey;
+}
+.darker-grey-bg {
+    background-color: $darker-grey;
+}

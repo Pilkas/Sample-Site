@@ -1,0 +1,72 @@
+.footer {
+    color: $grey;
+    padding: 1.428rem 0;
+    display: flex;
+    flex-flow:  row wrap;
+    // align-items: flex-end; 
+    @media screen and (max-width: 640px) {
+        flex-flow: column;
+        align-items: center;
+    }
+    &__navigation {
+        padding-bottom: 1.714rem;
+        flex: 0 1 100%;
+    }
+    &__navigation > ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        margin: 0;
+        @media screen and (max-width: 640px) {
+            flex-flow: column;
+        }
+        & li > a {
+            text-transform: lowercase;
+            color: $white;
+            display: block;
+            @media screen and (min-width: 641px) {
+                border-right: 2px solid $white;
+                padding: 0 0.851rem;
+            }
+            @media screen and (max-width: 640px) {
+                line-height: 1.5;
+                border-bottom: 2px solid $white;
+                padding: 0.851rem 0;
+            }
+            &:hover {
+                color: $black;
+            }
+        }
+        & > li:first-child > a {
+            padding-left: 0;
+        } 
+        & > li:last-child > a {
+            border: none;
+        }    
+    }
+    &__content {
+        flex: 0 1 calc(100% - 148px);
+        margin: 0;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+    }
+    &__logo {
+        flex: 0 1 auto;
+        width: 120px;
+        height: 38px;
+        fill: $white;
+        padding-left: 2rem; 
+        align-self: flex-end;
+        @media screen and (max-width: 640px) {
+            padding: 2rem 0 1rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer__navigation, .footer__content, .footer__logo {
+        flex: 0 1 auto
+    }
+}
