@@ -16,11 +16,20 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     });
 
-    document.getElementById('contact-submit').addEventListener('click', test);
+    prepareValidate();
 
-    function test() {
+    function prepareValidate () {
+        document.getElementById('contact-submit').addEventListener('click', test);
         var fields = document.querySelectorAll('.contact-form input, .contact-form textarea');
 
+        for (var i = 0; i < fields.length; i++) {
+            fields[i].addEventListener('input', test)
+        }
+    }
+    
+    function test() {
+        var fields = document.querySelectorAll('.contact-form input, .contact-form textarea');
+        
         for (var i = 0, fieldNotification; i < fields.length; i++) {
 
             fieldNotification = fields[i].parentNode.parentNode.querySelector('.contact-form__input-notification');
