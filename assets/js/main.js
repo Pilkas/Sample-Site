@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
 
     var menuToggler = document.getElementById("menu-toggler");
     var navbarMenu = document.getElementById("navbar-menu");
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     function test() {
+        
         var fields = document.querySelectorAll('.contact-form input, .contact-form textarea');
         
         for (var i = 0, fieldNotification; i < fields.length; i++) {

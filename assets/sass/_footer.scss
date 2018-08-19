@@ -46,6 +46,7 @@
         }    
     }
     &__content {
+        width: calc(100% - 148px);
         flex: 0 1 calc(100% - 148px);
         margin: 0;
         @media screen and (max-width: 640px) {
@@ -55,7 +56,7 @@
     &__logo {
         flex: 0 1 auto;
         width: 120px;
-        height: 38px;
+        height: 25px;
         fill: $white;
         padding-left: 2rem; 
         align-self: flex-end;

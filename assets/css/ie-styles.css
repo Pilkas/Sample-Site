@@ -4,6 +4,8 @@
     display: inline-block; }
     .primary-menu .main-menu__item {
       float: left; }
+    .primary-menu .main-menu__submenu {
+      text-align: left; }
 
 .secondary-menu {
   text-align: right; }
@@ -29,12 +31,18 @@
 .is-flex-9 {
   width: 70%; }
 
+.prefooter {
+  overflow: auto; }
+  .prefooter__item {
+    float: left;
+    width: 31%; }
+
 .footer {
   overflow: auto;
   position: relative; }
   .footer__navigation {
     padding-bottom: 1.714rem;
-    flex: 0 1 100%; }
+    overflow: auto; }
   .footer__navigation > ul > li > a {
     float: left; }
   .footer__content {
